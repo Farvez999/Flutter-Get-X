@@ -13,10 +13,83 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Get X Practices"),
+        title: const Text("Get X Practices"),
       ),
       body: Column(
-        children: [],
+        children: [
+          /// Start GetX Alert Dialog
+          Card(
+            child: ListTile(
+              title: const Text("GetX Dialog Alert"),
+              subtitle: const Text("GetX Dialog Alert in Flutter"),
+              onTap: (){
+                Get.defaultDialog(
+                  title: 'New Dialog',
+                  titlePadding: const EdgeInsets.only(top: 20),
+                  middleText: 'Are you sure you want to create a new chart?',
+                  contentPadding: const EdgeInsets.all(20),
+                  // textConfirm: 'Yes',
+                  // textCancel: 'No',
+                  confirm: TextButton(onPressed: (){
+                    Get.back();
+                  }, child: const Text('Ok')),
+                  cancel: TextButton(onPressed: (){
+                    Get.back();
+                  }, child: const Text('Cancel')),
+                  // content: const Column(
+                  //   children: [
+                  //     Text("New Line"),
+                  //     Text("New Line"),
+                  //     Text("New Line"),
+                  //     Text("New Line"),
+                  //     Text("New Line"),
+                  //     Text("New Line"),
+                  //     Text("New Line"),
+                  //   ],
+                  // )
+                );
+              },
+            ),
+          ),
+          /// End GetX Alert Dialog
+
+          /// Start GetX Bottom Sheet
+          Card(
+            child: ListTile(
+              title: const Text("GetX Bottom Sheet"),
+              subtitle: const Text("GetX Bottom Sheet in Flutter"),
+              onTap: (){
+                Get.bottomSheet(
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.only(topRight: Radius.circular(30), topLeft: Radius.circular(30))
+                    ),
+                    child: Column(
+                      children: [
+                        ListTile(
+                          leading: Icon(Icons.light_mode),
+                          title: Text("Light Theme"),
+                          onTap: (){
+                              Get.changeTheme(ThemeData.light());
+                          },
+                        ),
+                        ListTile(
+                          leading: Icon(Icons.dark_mode),
+                          title: Text("Dark Theme"),
+                          onTap: (){
+                            Get.changeTheme(ThemeData.dark());
+                          },
+                        ),
+                      ],
+                    ),
+                  )
+                );
+              },
+            ),
+          )
+          /// End GetX Bottom Sheet
+        ],
       ),
       floatingActionButton: FloatingActionButton(onPressed: () {
 

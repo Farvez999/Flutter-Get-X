@@ -1,16 +1,10 @@
-# getx_project
+# Flutter GetX
 
-A new Flutter project.
+A new Flutter GetX project.
 
-## Getting Started
+## Flutter GetX Road Map and what we will learn in step by step :
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- GetX Snack bar
+- GetX Dialog Alert
+- GetX Bottom Sheet
+- GetX Change Light & Dark Theme with GetX Flutter
