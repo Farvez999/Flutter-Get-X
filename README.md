@@ -8,3 +8,4 @@ A new Flutter GetX project.
 - GetX Dialog Alert
 - GetX Bottom Sheet
 - GetX Change Light & Dark Theme with GetX Flutter
+- GetX Navigator & Routes (How to pass data between different screens)
