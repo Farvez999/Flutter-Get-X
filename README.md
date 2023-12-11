@@ -11,3 +11,7 @@ A new Flutter GetX project.
 - GetX Navigator & Routes (How to pass data between different screens)
 - GetX Height & Get Width
 - GetX localization & Change App Language
+
+## GetX State Management with Example
+
+- GetX Counter Example, i.e counter app example

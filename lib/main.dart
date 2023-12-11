@@ -4,6 +4,7 @@ import 'package:getx_project/Navigator/navigator_screen.dart';
 import 'package:getx_project/Navigator/screen_one.dart';
 import 'package:getx_project/Navigator/screen_two.dart';
 import 'package:getx_project/home_screen.dart';
+import 'package:getx_project/view/screens/counter/counter_screen.dart';
 import 'package:getx_project/view/screens/languages/laguages_screen.dart';
 import 'package:getx_project/view/screens/languages/languages_translations.dart';
 
@@ -30,8 +31,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const HomeScreen(),
-      home: const LanguageScreen(),
+      // home: const LanguageScreen(),
       // home: const NavigatorScreen(),
+      home: const CounterScreen(),
       // getPages: [
       //   GetPage(name: '/', page: ()=>NavigatorScreen()),
       //   GetPage(name: '/screenOne', page: ()=>ScreenOne()),
