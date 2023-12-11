@@ -11,6 +11,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+
+    final height = MediaQuery.of(context).size.height *1;
     return Scaffold(
       appBar: AppBar(
         title: const Text("Get X Practices"),
@@ -87,8 +89,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
               },
             ),
-          )
+          ),
           /// End GetX Bottom Sheet
+
+          /// GetX Height & Width
+          Container(
+            height: height * .4,
+            width: Get.width * .5,
+            // height: MediaQuery.of(context).size.height * .6,
+            color: Colors.red,
+            child: Center(child: Text("Center"),),
+          )
         ],
       ),
       floatingActionButton: FloatingActionButton(onPressed: () {
