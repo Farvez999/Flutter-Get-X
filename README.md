@@ -9,3 +9,4 @@ A new Flutter GetX project.
 - GetX Bottom Sheet
 - GetX Change Light & Dark Theme with GetX Flutter
 - GetX Navigator & Routes (How to pass data between different screens)
+- GetX Height & Get Width
