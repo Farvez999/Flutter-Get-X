@@ -10,3 +10,4 @@ A new Flutter GetX project.
 - GetX Change Light & Dark Theme with GetX Flutter
 - GetX Navigator & Routes (How to pass data between different screens)
 - GetX Height & Get Width
+- GetX localization & Change App Language
